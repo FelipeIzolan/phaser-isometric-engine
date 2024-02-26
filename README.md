@@ -13,16 +13,6 @@ npm i && npm start
 - Add **tiles** and **objects** sprites in **public/tiles** and **public/objects**.
 - Load and create **tiles** and **objects** in **game.ts**.
 
-## ✨ Features
-
-- Grid
-- Tiles
-- Tiles Z
-- Tiles Object
-- Tiles Selection
-- Tiles Animation
-- Camera
-
 ## 📄 Documentation
 
 **Grid**
