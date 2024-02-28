@@ -41,14 +41,14 @@ setGrid(tiles: OptionalTileSetter[][]) //<- Set grid.
 
 **Tile**
 ```typescript
-grid: Grid //<- Grid parent.
+x: number //<- Grid tile x.
+y: number //<- Grid tile y.
+z: number //<- Grid tile z.
+object: number | null //<- Grid tile object.
 
-sprite: Phaser.Sprite //<- Tile sprite.
-ssprite: Phaser.Sprite //<- Object sprite.
-
-x: number
-y: number
-z: number
+worldX: number //<- Tile world position x.
+worldY: number //<- Tile world position y.
+depth: number //<- Tile depth.
 
 setTile(id: number) //<- Set tile by id.
 setObject(id: number) //<- Set object by id.

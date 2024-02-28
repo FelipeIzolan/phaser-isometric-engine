@@ -4,4 +4,4 @@ export type TileSetter = {
   object?: number,
 } | number;
 
-export type OptionalTileSetter = TileSetter | 0 | null | undefined;
+export type OptionalTileSetter = TileSetter | 0 | null;

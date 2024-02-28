@@ -48,9 +48,9 @@ export default class Game extends Phaser.Scene {
       [{ id: 3, z: 2, object: 2 }, { id: 3, z: 1, object: 2 }, { id: 3, object: 1 }, 1, 1, 2],
       [{ id: 3, z: 1, object: 1 }, { id: 3, object: 2 }, { id: 3, object: 2 }, 1, 2, 1], 
       [{ id: 3, object: 2 }, { id: 3, object: 1 }, { id: 3, object: 3 }, 1, 2, 1],
-      [4, 4, 2, 1, 2, 2],
+      [4, 4, 2, 1, 2, 1],
       [4, 4, 1, 1, 2, 1],
-      [4, 1, 2, 1, 1, 2],
+      [4, 1, 2, 1, 1, 1],
     ]);
   }
 
@@ -61,10 +61,8 @@ export default class Game extends Phaser.Scene {
     // ------------------------------------------------
     let tile = this.grid.getTileByIsoPos(this.input.mousePointer.worldX, this.input.mousePointer.worldY);
 
-    if (tile) {
-      tile.sprite.tint = 0xff0000;
-      tile.ssprite.tint = 0xffa500;
-    }
+    if (tile) 
+      tile.set();
     // ------------------------------------------------
   }
 }
